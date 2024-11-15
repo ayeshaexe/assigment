@@ -1,5 +1,4 @@
 import countryName from "@/app/details/page"
-import React from "react";
 import Link from "next/link";
 export default function CountryDetails ({params}: {params: { country_names: string }}) {
 const country = countryName.find(c => c.name.toLowerCase() === params.country_names.toLowerCase());
